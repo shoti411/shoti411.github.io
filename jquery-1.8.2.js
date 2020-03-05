@@ -18,6 +18,8 @@ var
 
 	// The deferred used on DOM ready
 	readyList,
+	
+	$('.carousel').carousel()
 
 	// Use the correct document accordingly with window argument (sandbox)
 	document = window.document,
