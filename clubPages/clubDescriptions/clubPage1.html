@@ -12,12 +12,21 @@
   <script type="text/javascript" src="jquery-1.8.2.js"></script>
   <script type="text/javascript" src="lib.js"></script>
   <script type="text/javascript" src="game.js"></script>
+
   <!-- Bootstrap core CSS -->
   <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="../../vendor/jquery/jquery.min.js"></script>
+  <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
   <!-- Custom styles for this template -->
   <link href="../../css/simple-sidebar.css" rel="stylesheet">
-
+  
 </head>
 
 <body>
@@ -32,7 +41,7 @@
       <!-- Back Button? -->
       <a href="<?php print $_SESSION('last_page'); ?>">Back</a>
       <?php $_SESSION('last_page') = request_uri(); ?>
-      
+
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
@@ -75,80 +84,77 @@
         </div>
       </nav>
 
-  <header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner" role="listbox">
-        <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>First Slide</h3>
-            <p>This is a description for the first slide.</p>
+      <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+              <div class="carousel-caption d-none d-md-block">
+                <h3>First Slide</h3>
+                <p>This is a description for the first slide.</p>
+              </div>
+            </div>
           </div>
+        </header>
+
+        <!-- Page Content -->
+        <div class="container">
+
+          <h1 class="my-4">Welcome to Modern Business</h1>
+
+
+
+          <!-- Portfolio Section -->
+
+
+          <!-- Features Section -->
+          <div class="row">
+            <div class="col-lg-6">
+              <h2>Prestige Worldwide</h2>
+              <p>The first word in entertainment</p>
+              <ul>
+                <li>
+                  <strong>Bootstrap v4</strong>
+                </li>
+                <li>Management</li>
+                <li>Financial Portfolios</li>
+                <li>insurance</li>
+                <li>computers</li>
+                <li>black leather gloves</li>
+                <li>research and development</li>
+              </ul>
+              <p>Last week we put liquid paper on a bee, and it died.</p>
+            </div>
+            <div class="col-lg-6">
+              <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
+            </div>
+          </div>
+          <!-- /.row -->
+
+          <hr>
+
+          <!-- Call to Action Section -->
+          <div class="row mb-4">
+            <div class="col-md-8">
+              <p>Investors? Possibly you!</p>
+            </div>
+            <div class="col-md-4">
+              <a class="btn btn-lg btn-secondary btn-block" href="https://www.youtube.com/watch?v=xUsOJrw5PJE">Our first act</a>
+            </div>
+          </div>
+
         </div>
-    </div>
-  </header>
+        <!-- /.container -->
 
-  <!-- Page Content -->
-  <div class="container">
-
-    <h1 class="my-4">Welcome to Modern Business</h1>
-
-
-
-    <!-- Portfolio Section -->
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+          <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+          </div>
+          <!-- /.container -->
+        </footer>
 
 
-    <!-- Features Section -->
-    <div class="row">
-      <div class="col-lg-6">
-        <h2>Prestige Worldwide</h2>
-        <p>The first word in entertainment</p>
-        <ul>
-          <li>
-            <strong>Bootstrap v4</strong>
-          </li>
-          <li>Management</li>
-          <li>Financial Portfolios</li>
-          <li>insurance</li>
-          <li>computers</li>
-          <li>black leather gloves</li>
-          <li>research and development</li>
-        </ul>
-        <p>Last week we put liquid paper on a bee, and it died.</p>
-      </div>
-      <div class="col-lg-6">
-        <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
-      </div>
-    </div>
-    <!-- /.row -->
+      </body>
 
-    <hr>
-
-    <!-- Call to Action Section -->
-    <div class="row mb-4">
-      <div class="col-md-8">
-        <p>Investors? Possibly you!</p>
-      </div>
-      <div class="col-md-4">
-        <a class="btn btn-lg btn-secondary btn-block" href="https://www.youtube.com/watch?v=xUsOJrw5PJE">Our first act</a>
-      </div>
-    </div>
-
-  </div>
-  <!-- /.container -->
-
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
-    </div>
-    <!-- /.container -->
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-</body>
-
-</html>
+      </html>
